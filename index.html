@@ -108,13 +108,13 @@
             console.log(str);
         }
         function six(){
-            console.log('one is six')
+            console.log('pushded six')
             let char='6'
             str=str.concat(char);
             console.log(str);
         }
         function seven(){
-            console.log('one is seven')
+            console.log('pushed seven')
             let char='7'
             str=str.concat(char);
             console.log(str);
@@ -170,10 +170,45 @@
             arr.push(parseInt(str));
             str=str.slice(0,0);
             // arr.push('*');
+            let myvar = document.getElementById('finalans');
+            // var myvar=arr.toString();
+            myvar.innerHTML='<p>done</p>'
             console.log('evaluating');
-            document.getElementById('finalans');
-            var myvar=arr.toString();
-        console.log(myvar)
+            while(arr.length!==1){
+                for(let a=0;a<arr.length;a++){
+                    if(arr[a]=='+'){
+                        var plusvar=arr[a-1]+arr[a+1];
+                        var del1=arr.slice(a-1,a-1);
+                        arr=del1;
+                        var del2=arr.slice(a+1,a+1);
+                        arr=del2;
+                    }
+                    else if(arr[a]=='-'){
+                        var minvar=arr[a-1]-arr[a+1];
+                        var del1=arr.slice(a-1,a-1);
+                        arr=del1;
+                        var del2=arr.slice(a,a);
+                        arr=del2;
+                    }
+                    else if(arr[a]=='*'){
+                        var mulvar=arr[a-1]*arr[a+1];
+                        var del1=arr.slice(a-1,a-1);
+                        arr=del1;
+                        var del2=arr.slice(a,a);
+                        arr=del2;
+                    }
+                    else if(arr[a]=='/'){
+                        var divvar=arr[a-1]/arr[a+1];
+                        var del1=arr.slice(a-1,a-1);
+                        arr=del1;
+                        var del2=arr.slice(a,a);
+                        arr=del2;
+                    }
+
+
+                }
+            }
+
         }
         console.log('hello');
         var arr=[];
@@ -186,6 +221,7 @@
 
         var lengthofarr=arr.length;
         console.log(lengthofarr);
+        
     </script>
 </body>
 </html>
