@@ -1,227 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new calc!</title>
 </head>
+
 <body>
     <style>
-        *{
+        * {
             margin: 1px;
             padding: 0px;
         }
-        button{
+
+        button {
             width: 30px;
             height: 30px;
             margin: 5px 3px;
         }
-        .allbtns{
+
+        .allbtns {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
-        #ans{
+
+        #ans {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 40px;
         }
-
     </style>
     <div class="maindiv">
 
-   
-    <div id="ans">
-        <span id="finalans">your question will be displayed here</span>
-    </div>
-    <div class="allbtns">
 
-        <div class="lineone">
-            <button id="7" onclick="seven()">7</button>
-            <button id="8" onclick="eight()">8</button>
-            <button id="9" onclick="nine()">9</button>
-            <button id="*" onclick="mul()">*</button>
+        <div id="ans">
+            <span id="finalans">your question will be displayed here</span>
         </div>
-        <div class="lineone">
-            <button id="4" onclick="four()">4</button>
-            <button id="5" onclick="five()">5</button>
-            <button id="6" onclick="six()">6</button>
-            <button id="-" onclick="min()">-</button>
+        <div class="allbtns">
+
+            <div class="lineone">
+                <button id="7" onclick="seven()">7</button>
+                <button id="8" onclick="eight()">8</button>
+                <button id="9" onclick="nine()">9</button>
+                <button id="*" onclick="mul()">*</button>
+            </div>
+            <div class="lineone">
+                <button id="4" onclick="four()">4</button>
+                <button id="5" onclick="five()">5</button>
+                <button id="6" onclick="six()">6</button>
+                <button id="-" onclick="min()">-</button>
+            </div>
+            <div class="lineone">
+                <button id="1" onclick="one()">1</button>
+                <button id="2" onclick="two()">2</button>
+                <button id="3" onclick="three()">3</button>
+                <button id="+" onclick="plus()">+</button>
+            </div>
+            <div class="lineone">
+                <button id="0" onclick="zero()">0</button>
+                <button id="/" onclick="div()">/</button>
+                <button id="=" onclick="equal()">=</button>
+                <button id="n">n</button>
+            </div>
         </div>
-        <div class="lineone">
-            <button id="1" onclick="one()">1</button>
-            <button id="2" onclick="two()">2</button>
-            <button id="3" onclick="three()">3</button>
-            <button id="+" onclick="plus()">+</button>
-        </div>
-        <div class="lineone">
-            <button id="0"onclick="zero()">0</button>
-            <button id="/" onclick="div()">/</button>
-            <button id="=" onclick="equal()">=</button>
-            <button id="n">n</button>
-        </div>
-    </div>
     </div>
 
     <script>
-        function zero(){
+        function zero() {
             console.log('0 is pushed')
-            let char='0'
-            str=str.concat(char);
+            let char = '0'
+            str = str.concat(char);
             console.log(str);
         }
-        function one(){
+        function one() {
             console.log('one is pushed');
-            // arr.push(1);
-            // console.log(arr);
-            // str.add(1);
-            // console.log(str)
-            let char='1'
-            str=str.concat(char);
+            let char = '1'
+            str = str.concat(char);
             console.log(str);
         }
-        function two(){
+        function two() {
             console.log('pushed two')
-            let char='2'
-            str=str.concat(char);
+            let char = '2'
+            str = str.concat(char);
             console.log(str);
         }
-        function three(){
+        function three() {
             console.log('three is pushed')
-            let char='3'
-            str=str.concat(char);
+            let char = '3'
+            str = str.concat(char);
             console.log(str);
         }
-        function four(){
+        function four() {
             console.log('four is pushed')
-            let char='4'
-            str=str.concat(char);
+            let char = '4'
+            str = str.concat(char);
             console.log(str);
         }
-        function five (){
+        function five() {
             console.log('five is pushed')
-            let char='5'
-            str=str.concat(char);
+            let char = '5'
+            str = str.concat(char);
             console.log(str);
         }
-        function six(){
+        function six() {
             console.log('pushded six')
-            let char='6'
-            str=str.concat(char);
+            let char = '6'
+            str = str.concat(char);
             console.log(str);
         }
-        function seven(){
+        function seven() {
             console.log('pushed seven')
-            let char='7'
-            str=str.concat(char);
+            let char = '7'
+            str = str.concat(char);
             console.log(str);
         }
-        function eight(){
+        function eight() {
             console.log('push eight')
-            let char='8'
-            str=str.concat(char);
+            let char = '8'
+            str = str.concat(char);
             console.log(str);
         }
-        function nine(){
+        function nine() {
             console.log('push nine')
-            let char='9'
-            str=str.concat(char);
+            let char = '9'
+            str = str.concat(char);
             console.log(str);
         }
-        function mul(){
+        function mul() {
             console.log('mul is pushed')
-            let char='*'
-            // str=str.concat(char);
+            let char = '*'
             arr.push(parseInt(str));
-            str=str.slice(0,0);
+            str = str.slice(0, 0);
             arr.push('*');
             console.log(str);
             console.log(arr);
         }
-        function plus(){
+        function plus() {
             console.log('plus is pushed')
-            let char='+'
+            let char = '+'
             arr.push(parseInt(str));
-            str=str.slice(0,0);
+            str = str.slice(0, 0);
             arr.push('+');
         }
-        function min(){
+        function min() {
             console.log('min is pushed')
-            let char='-'
+            let char = '-'
             arr.push(parseInt(str));
-            str=str.slice(0,0);
+            str = str.slice(0, 0);
             arr.push('-');
         }
-         function div(){
+        function div() {
             console.log('div is pushed')
-            let char='/'
+            let char = '/'
             arr.push(parseInt(str));
-            str=str.slice(0,0);
-            arr.push('*');
+            str = str.slice(0, 0);
+            arr.push('/');
         }
 
-        function equal(){
-            console.log('equal is pushed ')
-            let char='='
-            str=str.concat(char);
+        function equal() {
+
             arr.push(parseInt(str));
-            str=str.slice(0,0);
-            // arr.push('*');
+            console.log(arr);
+
+            console.log('equal is pushed ')
             let myvar = document.getElementById('finalans');
-            // var myvar=arr.toString();
-            myvar.innerHTML='<p>done</p>'
+           
             console.log('evaluating');
-            while(arr.length!==1){
-                for(let a=0;a<arr.length;a++){
-                    if(arr[a]=='+'){
-                        var plusvar=arr[a-1]+arr[a+1];
-                        var del1=arr.slice(a-1,a-1);
-                        arr=del1;
-                        var del2=arr.slice(a+1,a+1);
-                        arr=del2;
+            while (arr.length > 1) {
+                for (let a = 0; a < arr.length; a++) {
+                    if (arr[a] == '/') {
+                        var bhagakar = arr[a - 1] / arr[a + 1];
+                        arr[a] = bhagakar;
+                        console.log(arr)
+                        arr.splice(a + 1, 1);
+                        console.log(arr);
+                        arr.splice(a - 1, 1);
+                        console.log(arr);
                     }
-                    else if(arr[a]=='-'){
-                        var minvar=arr[a-1]-arr[a+1];
-                        var del1=arr.slice(a-1,a-1);
-                        arr=del1;
-                        var del2=arr.slice(a,a);
-                        arr=del2;
+                    else if (arr[a] == '*') {
+                        var gunakar = arr[a - 1] * arr[a + 1];
+                        arr[a] = gunakar;
+                        console.log(arr)
+                        arr.splice(a + 1, 1);
+                        console.log(arr);
+                        arr.splice(a - 1, 1);
+                        console.log(arr);
                     }
-                    else if(arr[a]=='*'){
-                        var mulvar=arr[a-1]*arr[a+1];
-                        var del1=arr.slice(a-1,a-1);
-                        arr=del1;
-                        var del2=arr.slice(a,a);
-                        arr=del2;
+                    else if (arr[a] == '+') {
+                        var sarvado = arr[a - 1] + arr[a + 1];
+                        arr[a] = sarvado;
+                        console.log(arr)
+                        arr.splice(a + 1, 1);
+                        console.log(arr);
+                        arr.splice(a - 1, 1);
+                        console.log(arr);
                     }
-                    else if(arr[a]=='/'){
-                        var divvar=arr[a-1]/arr[a+1];
-                        var del1=arr.slice(a-1,a-1);
-                        arr=del1;
-                        var del2=arr.slice(a,a);
-                        arr=del2;
+                    else if (arr[a] == '-') {
+                        var badbaki = arr[a - 1] - arr[a + 1];
+                        arr[a] = badbaki;
+                        console.log(arr)
+                        arr.splice(a + 1, 1);
+                        console.log(arr);
+                        arr.splice(a - 1, 1);
+                        console.log(arr);
                     }
-
-
                 }
             }
 
+            document.getElementById('finalans').innerText=arr.toString();
         }
-        console.log('hello');
-        var arr=[];
-        let str=''
-        // var string='hello'
-        string='helloooooooo'
-        // console.log(arr)
-        // var myvar=arr.toString();
-        // console.log(myvar)
 
-        var lengthofarr=arr.length;
-        console.log(lengthofarr);
-        
+        var arr = [];
+        var str = ''
+        // var myvar = arr.toString();
     </script>
 </body>
+
 </html>
